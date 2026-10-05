@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 380" width="850" height="380">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.45" />
+    </filter>
+  </defs>
+  <rect x="25" y="20" width="800" height="340" rx="10" fill="#181824" stroke="#2a2a3c" stroke-width="1.5" filter="url(#shadow)" />
+  
+  <!-- Window Header -->
+  <path d="M 25 30 Q 25 20 35 20 L 815 20 Q 825 20 825 30 L 825 58 L 25 58 Z" fill="#1f1f2e" />
+  <circle cx="48" cy="39" r="6" fill="#ff5f56" />
+  <circle cx="68" cy="39" r="6" fill="#ffbd2e" />
+  <circle cx="88" cy="39" r="6" fill="#27c93f" />
+  <text x="425" y="44" fill="#a0a0b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" text-anchor="middle" font-weight="500">
+    bash — git log --graph --oneline (Lịch sử Commit sạch sẽ sau Rebase)
+  </text>
+  <line x1="25" y1="58" x2="825" y2="58" stroke="#2a2a3c" stroke-width="1" />
+
+  <!-- Terminal Content -->
+  <g font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13" line-height="1.6">
+    <text x="50" y="95">
+      <tspan fill="#4ec9b0">user@devops-machine</tspan>
+      <tspan fill="#808080">:</tspan>
+      <tspan fill="#569cd6">~/SS05_HW02_PhanThuanThanh_176</tspan>
+      <tspan fill="#dcdcaa"> (feature/authentication)</tspan>
+      <tspan fill="#ffffff">$ git log --graph --oneline</tspan>
+    </text>
+
+    <!-- Log line 1 -->
+    <text x="50" y="130">
+      <tspan fill="#f14c4c">* </tspan>
+      <tspan fill="#e5c07b" font-weight="bold">52eb557 </tspan>
+      <tspan fill="#569cd6">(</tspan>
+      <tspan fill="#4ec9b0" font-weight="bold">HEAD -&gt; </tspan>
+      <tspan fill="#98c379" font-weight="bold">feature/authentication</tspan>
+      <tspan fill="#569cd6">) </tspan>
+      <tspan fill="#abb2bf">feat: hoan thien module authentication</tspan>
+    </text>
+
+    <!-- Log line 2 -->
+    <text x="50" y="160">
+      <tspan fill="#f14c4c">* </tspan>
+      <tspan fill="#e5c07b" font-weight="bold">37e2fd2 </tspan>
+      <tspan fill="#569cd6">(</tspan>
+      <tspan fill="#98c379" font-weight="bold">main</tspan>
+      <tspan fill="#569cd6">) </tspan>
+      <tspan fill="#abb2bf">feat: khoi tao du an ban dau</tspan>
+    </text>
+
+    <text x="50" y="210">
+      <tspan fill="#4ec9b0">user@devops-machine</tspan>
+      <tspan fill="#808080">:</tspan>
+      <tspan fill="#569cd6">~/SS05_HW02_PhanThuanThanh_176</tspan>
+      <tspan fill="#dcdcaa"> (feature/authentication)</tspan>
+      <tspan fill="#ffffff">$ git log main..feature/authentication --oneline</tspan>
+    </text>
+
+    <!-- Log feature only -->
+    <text x="50" y="245">
+      <tspan fill="#e5c07b" font-weight="bold">52eb557 </tspan>
+      <tspan fill="#98c379" font-weight="bold">feat: hoan thien module authentication</tspan>
+    </text>
+
+    <text x="50" y="290">
+      <tspan fill="#4ec9b0">user@devops-machine</tspan>
+      <tspan fill="#808080">:</tspan>
+      <tspan fill="#569cd6">~/SS05_HW02_PhanThuanThanh_176</tspan>
+      <tspan fill="#dcdcaa"> (feature/authentication)</tspan>
+      <tspan fill="#ffffff">$ test -f temp.txt &amp;&amp; echo "Ton tai" || echo "temp.txt DA BI XOA (DROP) HOAN TOAN"</tspan>
+    </text>
+
+    <text x="50" y="320" fill="#4ec9b0" font-weight="bold">
+      temp.txt DA BI XOA (DROP) HOAN TOAN
+    </text>
+  </g>
+</svg>
